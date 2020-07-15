@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>tech world</title>
+    <link rel="stylesheet" href="login.css">
+  </head>
+  <body style="background-color:;">
+    <h2 style='margin-left:750px'>Login Form</h2>
+    <button onclick="document.getElementById('id01').style.display='block'" class="logbtn" style='margin-left:740px' >Login</button>
+
+    <div id="id01" class="modal">
+
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal"></span>
+  <form method="post">
+    <!-- <h1 style="margin-left:670px"><b>Sign In</b></h1>
+    <hr> -->
+    <div class="imgcontainer" style='margin-left:740px'>
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal"style='margin-left:540px' ><i><b>&times;</b></i></span>
+<!-- <button class="btn"><i class="close"></i></button> -->
+          <img src="download.jpg" alt="Avatar" class="avatar" style='margin-left:10px'>
+        </div>
+          <div class="container">
+    <label for="name" style="margin-left:560px"><b>User Name</b></label>
+    <input type="text" placeholder="Enter EmailId/ContactNo." name="name" style="margin-left:103px" required><br>
+
+    <label for="psw" style="margin-left:560px"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" style="margin-left:113px" required><br><br>
+      <button type="submit" class="signinbtn" style='margin-left:740px'>Sign In</button><br><br>
+      <label style="margin-left:740px">
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      </div>
+
+      <div class="container" >
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="canbtn" style='margin-left:740px' >Cancel</button>
+      <span class="psw" style="margin-left:200px">Forgot <a href="#">password?</a></span>
+    <!-- </div>
+
+        <!-<button type="button" class="clrbtn" style='margin-right:40px'>Clear</button>
+    <button type="button" class="canbtn" style='margin-right:40px'>Cancel</button> -->
+
+    <!-- </div> -->
+    </form>
+    </div>
+    <script>
+      var modal = document.getElementById('id01');
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+    </script>
+  </body>
+</html>
